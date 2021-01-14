@@ -14,7 +14,8 @@ public class Operator {
         System.out.println(a + b);   // 30
         System.out.println(a - b);   // -10
         System.out.println(a * b);   // 200
-        System.out.println(a /(double)b);  //0.5
+        System.out.println(a /(double)b);  // 0.5
+        System.out.println(a % b);  // 10
 
         // boolean
         System.out.println(a > b);      // false
