@@ -1,4 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 
 public class KeyWord {
     public static void main(String[] args) {
