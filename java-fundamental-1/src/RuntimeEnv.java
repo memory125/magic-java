@@ -21,7 +21,9 @@ public class RuntimeEnv {
         Properties properties = System.getProperties();
         Enumeration eprops = properties.propertyNames();
         while(eprops.hasMoreElements()){
+            // 获取属性名称
             String key = (String)eprops.nextElement();
+            // 获取属性值
             String value = System.getProperty(key);
 
             System.out.println("key = " + key + ", value = " + value);
