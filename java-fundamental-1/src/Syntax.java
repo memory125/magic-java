@@ -9,7 +9,7 @@ public class Syntax {
         user.setAddr("Shenzhen,Guangdong,China");
         user.setAge(23);
         user.setGender("Male");
-        user.setSalary(9000L);
+        user.setSalary(9000.0);
 
         System.out.println("User Information: ");
         System.out.println(user.getId() + "\t" +

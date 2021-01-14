@@ -13,7 +13,7 @@ public class User {
     private String gender;
     private String addr;
     private int age;
-    private long salary;
+    private double salary;
 
     public long getId() {
         return id;
@@ -55,13 +55,10 @@ public class User {
         this.age = age;
     }
 
-    public long getSalary() {
+    public double getSalary() {
         return salary;
     }
-
-    public void setSalary(long salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
-
-
 }

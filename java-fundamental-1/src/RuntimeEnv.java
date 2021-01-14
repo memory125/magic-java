@@ -12,7 +12,6 @@ public class RuntimeEnv {
         // 系统名称
         System.out.println("The runtime OS is " + System.getProperty("os.name"));
         // 系统版本
-
         System.out.println("The runtime OS version is " + System.getProperty("os.version"));
         // JDK版本
         System.out.println("The runtime java  version is " + System.getProperty("java.version"));
@@ -25,7 +24,6 @@ public class RuntimeEnv {
             String key = (String)eprops.nextElement();
             // 获取属性值
             String value = System.getProperty(key);
-
             System.out.println("key = " + key + ", value = " + value);
         }
     }
