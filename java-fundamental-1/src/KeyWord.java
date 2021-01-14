@@ -1,4 +1,6 @@
-
+/**
+ * @author memory125
+ */
 public class KeyWord {
     public static void main(String[] args) {
         short a = 0;

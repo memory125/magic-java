@@ -1,6 +1,8 @@
 import java.util.Enumeration;
 import java.util.Properties;
-
+/**
+ * @author memory125
+ */
 public class RuntimeEnv {
     public static void main(String[] args) {
         // 获取CPU核数

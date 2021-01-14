@@ -1,6 +1,8 @@
 import com.wing.module.User;
 import java.util.Random;
-
+/**
+ * @author memory125
+ */
 public class Syntax {
     public static void main(String[] args) {
         User user = new User();
