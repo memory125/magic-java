@@ -31,7 +31,9 @@ public class Operator {
         System.out.println(d);      // 4
         System.out.println(e);      // 4
 
-
+        // Math
+        double pow = Math.pow(2, 4);   //16.0
+        System.out.println(pow);
 
         System.out.println("Operator Demo");
     }
