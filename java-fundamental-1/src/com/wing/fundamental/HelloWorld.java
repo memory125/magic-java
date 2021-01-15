@@ -1,3 +1,5 @@
+package com.wing.fundamental;
+
 /***
  *                    _ooOoo_
  *                   o8888888o

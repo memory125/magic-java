@@ -1,3 +1,5 @@
+package com.wing.fundamental;
+
 import com.wing.module.User;
 import java.util.Random;
 /**
@@ -22,6 +24,6 @@ public class Syntax {
                 user.getSalary());
 
 
-        System.out.println("The Syntax Demo!");
+        System.out.println("The com.wing.fundamental.Syntax Demo!");
     }
 }

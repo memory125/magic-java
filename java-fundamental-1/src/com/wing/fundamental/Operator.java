@@ -1,3 +1,5 @@
+package com.wing.fundamental;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +44,7 @@ public class Operator {
         System.out.println(x || y);         // true  - 如有一个为true，结果则为true
         System.out.println(!(x && y));      // true  - 取反，括号内为true，结果则为false，括号内为false，结果则为true
 
-        System.out.println("Operator Demo");
+        System.out.println("com.wing.fundamental.Operator Demo");
 
         // bit operations
         int x1 = 4;  // 0100

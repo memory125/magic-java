@@ -1,3 +1,5 @@
+package com.wing.fundamental;
+
 /**
  * @author memory125
  */
