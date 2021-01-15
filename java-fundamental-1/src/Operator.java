@@ -57,5 +57,9 @@ public class Operator {
         int x3 = 4;
         System.out.println(x3<<4);              // 64 = x3*2*2*2*2
         System.out.println(x3>>2);              // 1 = (x3/2)/2
+
+        // expression1 ? expression2 : expression3
+        int x4 = 8;
+        System.out.println(x4 < 9 ? "x is smaller!" : "x is bigger!");  // x is smaller!
      }
 }
