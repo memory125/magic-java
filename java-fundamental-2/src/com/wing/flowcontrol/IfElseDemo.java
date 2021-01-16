@@ -71,6 +71,8 @@ public class IfElseDemo {
                 System.out.println(num + "是字符串！");
             }
         }
+
+        scanner.close();
     }
 
     // 统计特殊字符的个数
