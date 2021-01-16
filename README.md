@@ -9,3 +9,8 @@ Java programming learning repository.
 
 ## fundamental-2
 - Java basic classes demos and usage.
+- Scanner usage.
+- The flow control demo.
+
+## fundamental-3
+- Java method demos and usage.
