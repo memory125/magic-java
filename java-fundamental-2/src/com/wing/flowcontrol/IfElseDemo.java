@@ -53,6 +53,7 @@ public class IfElseDemo {
                     System.out.println(num + "是浮点数！");
                 }
             } else if (chCount > 1) {
+                // 判断截取的字符是否为数字
                 boolean flag = true;
                 String[] spStr = num.split("\\.");
                 for (int i = 0; i < spStr.length; i++) {
@@ -60,7 +61,7 @@ public class IfElseDemo {
                         flag = false;
                     }
                 }
-
+                // 如果包含数字，则说明是数字组成的字符串
                 if (flag) {
                     System.out.println(num + "是数字组成的其他类型！");
                 } else {
