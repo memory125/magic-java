@@ -10,6 +10,19 @@ public class SparseArrayDemo {
         array1[2][3] = 2;
 
         // 输出原始数组
+        /**
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	1	0	0	0	0	0	0	0	0
+         * 0	0	0	2	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         * 0	0	0	0	0	0	0	0	0	0	0
+         */
         System.out.println("原始数组为: ");
         for (int[] ints: array1) {
             for (int anInt: ints) {
@@ -75,6 +88,11 @@ public class SparseArrayDemo {
          * [...] 具体行  具体列    对应的值
          */
         System.out.println("稀疏数组为: " );
+        /**
+         * 11	11	2
+         * 1	2	1
+         * 2	3	2
+         */
         for (int i = 0; i < array2.length; i++) {
             System.out.println(array2[i][0] + "\t" + array2[i][1] + "\t" + array2[i][2]);
         }
