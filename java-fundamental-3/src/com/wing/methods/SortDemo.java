@@ -61,5 +61,7 @@ public class SortDemo {
 
         long min = findMinValue(array);
         System.out.println("数组中最小的值是: " + min);
+
+        scanner.close();
     }
 }
