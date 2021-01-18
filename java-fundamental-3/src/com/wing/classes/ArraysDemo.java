@@ -42,6 +42,11 @@ public class ArraysDemo {
         System.out.println("反转后的数组是: ");
         System.out.println(Arrays.toString(reversedArray));
 
+        // 数组排序
+        Arrays.sort(reversedArray);
+        System.out.println("排序后的数组是: ");
+        System.out.println(Arrays.toString(reversedArray));
+
         scanner.close();
     }
 }
