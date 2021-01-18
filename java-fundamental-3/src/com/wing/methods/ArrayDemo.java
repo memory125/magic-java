@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ArrayDemo {
+    // 打印数组
     private static void printArray(long[] array) {
         for (long arr: array) {
             System.out.print(arr + "  ");
@@ -12,6 +13,7 @@ public class ArrayDemo {
         System.out.println();
     }
 
+    // 反转数组
     private static long[] reverseArray(long[] array) {
         assert array.length != 0;
 
