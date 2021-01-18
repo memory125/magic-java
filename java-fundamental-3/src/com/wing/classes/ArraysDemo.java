@@ -1,18 +1,11 @@
-package com.wing.methods;
+package com.wing.classes;
 
+import java.util.Scanner;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class ArrayDemo {
-    // 打印数组
-    private static void printArray(long[] array) {
-        for (long arr: array) {
-            System.out.print(arr + "  ");
-        }
-        System.out.println();
-    }
-
+public class ArraysDemo {
     // 反转数组
     private static long[] reverseArray(long[] array) {
         assert array.length != 0;
@@ -37,17 +30,17 @@ public class ArrayDemo {
             longArr.add(input);
         }
 
+        System.out.println("您输入的数组是: ");
+
         // 将List<Long>转成long[]
         long [] array = longArr.stream().mapToLong(t->t.longValue()).toArray();
-
-        System.out.println("您输入的数组是: ");
-        // 打印数组
-        printArray(array);
+        // 打印数组,使用Arrays类实现
+        System.out.println(Arrays.toString(array));
 
         // 反转数组
         long[] reversedArray = reverseArray(array);
         System.out.println("反转后的数组是: ");
-        printArray(reversedArray);
+        System.out.println(Arrays.toString(reversedArray));
 
         scanner.close();
     }
