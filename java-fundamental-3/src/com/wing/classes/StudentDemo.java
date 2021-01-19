@@ -10,6 +10,7 @@ public class StudentDemo {
         stu1.setAge(11);
         stu1.setGender("Male");
         stu1.setClassLevel(5);
+        stu1.setAddr("Shenzhen,Guangdong,China");
 
         // student 2
         Student stu2 = new Student();
@@ -17,6 +18,7 @@ public class StudentDemo {
         stu2.setAge(10);
         stu2.setGender("Female");
         stu2.setClassLevel(4);
+        stu2.setAddr("Xian,Shanxi,China");
 
         System.out.println(stu1.toString());
         System.out.println(stu2.toString());

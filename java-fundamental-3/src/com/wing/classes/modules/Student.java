@@ -19,6 +19,10 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return this.getName() + " , " + Integer.toString(this.getAge()) + " , " + this.getGender() + " , " + Integer.toString(this.getClassLevel());
+        return this.getName() + " , "
+                + Integer.toString(this.getAge()) + " , "
+                + this.getGender() + " , "
+                + Integer.toString(this.getClassLevel()) + " , "
+                + this.getAddr();
     }
 }

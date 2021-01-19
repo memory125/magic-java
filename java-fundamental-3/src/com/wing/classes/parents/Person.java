@@ -9,6 +9,16 @@ public class Person {
     private String gender;
     // 职业
     private String occupation;
+    // 地址
+    private String addr;
+
+    public String getAddr() {
+        return addr;
+    }
+
+    public void setAddr(String addr) {
+        this.addr = addr;
+    }
 
     public int getAge() {
         return age;
@@ -42,12 +52,14 @@ public class Person {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 ", occupation='" + occupation + '\'' +
+                ", addr='" + addr + '\'' +
                 '}';
     }
 }
