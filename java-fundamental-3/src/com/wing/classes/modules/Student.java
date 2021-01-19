@@ -1,33 +1,12 @@
 package com.wing.classes.modules;
 
-public class Student {
-    private String name;     // 姓名
-    private int age;         // 年龄
-    private String gender;   // 性别
+import com.wing.classes.parents.Person;
+
+public class Student extends Person {
     private int classLevel;  // 班级
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
+    public Student() {
+        super();
     }
 
     public int getClassLevel() {
@@ -38,6 +17,7 @@ public class Student {
         this.classLevel = level;
     }
 
+    @Override
     public String toString() {
         return this.getName() + " , " + Integer.toString(this.getAge()) + " , " + this.getGender() + " , " + Integer.toString(this.getClassLevel());
     }

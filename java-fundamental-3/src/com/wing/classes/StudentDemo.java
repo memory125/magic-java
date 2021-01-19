@@ -20,7 +20,5 @@ public class StudentDemo {
 
         System.out.println(stu1.toString());
         System.out.println(stu2.toString());
-
-
     }
 }
