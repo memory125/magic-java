@@ -4,11 +4,14 @@ package com.wing.classes.parents;
  * @author memory125
  */
 public class Animals {
-    String name;
 
+    // static代码块只执行一次
     static {
         System.out.println("Animals: static代码块");
     }
+
+    // 名字
+    String name;
 
     public Animals() {
         System.out.println("Animals-构造方法！！！！！！！！");
@@ -21,14 +24,10 @@ public class Animals {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
+    // 类别
+    String category;
+    // 性别
+    String gender;
 
     public String getGender() {
         return gender;
@@ -37,11 +36,17 @@ public class Animals {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    String type;
-    String gender;
 
     {
         System.out.println(this.getClass() + ": 匿名代码块！！！！！");
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
 
