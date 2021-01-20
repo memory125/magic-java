@@ -14,3 +14,9 @@ Java programming learning repository.
 
 ## fundamental-3
 - Java method demos and usage.
+- Arrays usage.
+- Class definition and inherit.
+
+## fundamental-4
+- Abstract class definition, extending and demo.
+- Interface definition, implementation and demo.
