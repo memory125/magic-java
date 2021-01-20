@@ -1,5 +1,7 @@
 package com.wing.classes;
-
+/**
+ * @author memory125
+ */
 public class SparseArrayDemo {
     public static void main(String[] args) {
         System.out.println("1. 构造原始数组----------------------");

@@ -1,5 +1,7 @@
 package com.wing.flowcontrol;
-
+/**
+ * @author memory125
+ */
 import java.util.Scanner;
 
 public class WhileDemo {

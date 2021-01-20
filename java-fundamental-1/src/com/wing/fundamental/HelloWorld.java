@@ -23,6 +23,9 @@ package com.wing.fundamental;
  * .............................................
  *          佛祖保佑             永无BUG
  */
+/**
+ * @author memory125
+ */
  public class HelloWorld {
     public static void main(String[] args) {
         // This is the 1st java code

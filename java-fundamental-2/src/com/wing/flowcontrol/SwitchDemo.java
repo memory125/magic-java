@@ -1,5 +1,7 @@
 package com.wing.flowcontrol;
-
+/**
+ * @author memory125
+ */
 public class SwitchDemo {
     public static void main(String[] args) {
         char grade = 'B';

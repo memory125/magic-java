@@ -1,5 +1,7 @@
 package com.wing.classes.parents;
-
+/**
+ * @author memory125
+ */
 public class Person {
     // 姓名
     private String name;

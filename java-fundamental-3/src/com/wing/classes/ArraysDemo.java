@@ -4,7 +4,9 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @author memory125
+ */
 public class ArraysDemo {
     // 反转数组
     private static long[] reverseArray(long[] array) {

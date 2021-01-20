@@ -1,7 +1,9 @@
 package com.wing.flowcontrol;
 
 import java.util.Scanner;
-
+/**
+ * @author memory125
+ */
 public class DivDemo {
     public static void main(String[] args) {
         int i = 0;

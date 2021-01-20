@@ -1,7 +1,9 @@
 package com.wing.fundamental;
 
 import java.util.Scanner;
-
+/**
+ * @author memory125
+ */
 public class ScannerDemo2 {
     public static void main(String[] args) {
         // hasNextLine

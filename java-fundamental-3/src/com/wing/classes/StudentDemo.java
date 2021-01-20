@@ -1,7 +1,9 @@
 package com.wing.classes;
 
 import com.wing.classes.modules.Student;
-
+/**
+ * @author memory125
+ */
 public class StudentDemo {
     public static void main(String[] args) {
         // student 1

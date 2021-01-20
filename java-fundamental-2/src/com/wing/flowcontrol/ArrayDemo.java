@@ -1,5 +1,8 @@
 package com.wing.flowcontrol;
 
+/**
+ * @author memory125
+ */
 public class ArrayDemo {
     public static void main(String[] args) {
         int[] arr = {10, 20, 23, 40,45, 56, 57, 53, 34};

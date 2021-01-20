@@ -1,7 +1,9 @@
 package com.wing.classes.modules;
 
 import com.wing.classes.parents.Person;
-
+/**
+ * @author memory125
+ */
 public class Student extends Person {
     private int classLevel;  // 班级
 

@@ -3,7 +3,9 @@ package com.wing.classes;
 import com.wing.classes.modules.Staff;
 import com.wing.classes.modules.Student;
 import com.wing.classes.parents.Person;
-
+/**
+ * @author memory125
+ */
 public class InstanceofDemo {
     public static void main(String[] args) {
         Student student = new Student();
@@ -29,6 +31,7 @@ public class InstanceofDemo {
         Staff staff = new Staff();
         Person person2 = new Staff();
         Object obj2 = new Staff();
+
         System.out.println(staff instanceof Person);
        // System.out.println(staff instanceof Student);
         System.out.println(staff instanceof Object);

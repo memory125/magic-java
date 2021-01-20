@@ -1,7 +1,9 @@
 package com.wing.classes;
 
 import com.wing.classes.modules.Staff;
-
+/**
+ * @author memory125
+ */
 public class StaffDemo {
     public static void main(String[] args) {
         // staff 1

@@ -1,7 +1,9 @@
 package com.wing.classes.modules;
 
 import com.wing.classes.parents.Person;
-
+/**
+ * @author memory125
+ */
 public class Staff extends Person {
     // 公司
     String company;
