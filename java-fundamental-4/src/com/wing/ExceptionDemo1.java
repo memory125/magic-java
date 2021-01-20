@@ -3,7 +3,7 @@ package com.wing;
 /**
  * @author memory125
  */
-public class ExceptionDemo {
+public class ExceptionDemo1 {
     public static void main(String[] args) {
         int a = 8;
         int b = 0;
