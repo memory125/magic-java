@@ -3,12 +3,12 @@ package com.wing.classes.modules;
 import com.wing.classes.parents.Animals;
 
 public class Dog extends Animals {
-    static {
-        System.out.println("Dog: 静态代码块！！！！");
-    }
-
     {
         System.out.println(this.getClass() + ": 匿名代码块！！！！");
+    }
+
+    static {
+        System.out.println("Dog: 静态代码块！！！！");
     }
 
     public Dog() {
