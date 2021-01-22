@@ -1,7 +1,6 @@
 package com.wing;
 
 import com.wing.exceptions.MyException;
-
 import java.util.Scanner;
 
 /**
