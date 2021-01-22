@@ -6,6 +6,7 @@ package com.wing;
 public class ExceptionDemo2 {
     /*
       可以多次捕获Exception，但是最小的(子类)异常必须写在前面。如：Error -> Exception -> Throwable
+      可以在方法体中使用 Alt + Ctrl + T快捷键添加try catch finally代码块
      */
     public static void main(String[] args) {
         int a = 8;
