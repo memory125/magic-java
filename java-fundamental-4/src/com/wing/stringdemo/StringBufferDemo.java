@@ -5,13 +5,13 @@ import java.util.Scanner;
 /**
  * @author memory125
  */
-public class StringBuilderDemo {
+public class StringBufferDemo {
     static final String END_FLAG = "00";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // StringBuilder 可变长，单线程数据量较大，效率高，不安全
-        StringBuilder stringBuilder = new StringBuilder();
+        // StringBuffer 可变长，多线程数据量较大，效率低，安全
+        StringBuffer stringBuffer = new StringBuffer();
 
         System.out.println("请输入数据：");
         String str = null;
@@ -20,10 +20,10 @@ public class StringBuilderDemo {
             if (END_FLAG.equals(str)) {
                 break;
             }
-            stringBuilder.append(str);
+            stringBuffer.append(str);
         }
 
-        System.out.println(stringBuilder.toString());
+        System.out.println(stringBuffer.toString());
 
         scanner.close();
     }
