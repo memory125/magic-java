@@ -1,4 +1,4 @@
-package com.wing.gui.Frame;
+package com.wing.gui.frame;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;

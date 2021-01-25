@@ -1,15 +1,13 @@
-package com.wing.gui.Frame;
-
-import com.wing.gui.listener.MyWindowListener;
+package com.wing.gui.frame;
 
 import java.awt.*;
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 /**
  * @author memory125
  */
-public class TestFrame {
+public class TestFrame2 {
     public static void main(String[] args) {
         // 创建Frame对象
         Frame frame = new Frame("Java AWT Test Frame");
@@ -29,8 +27,13 @@ public class TestFrame {
         // 设置大小固定
         frame.setResizable(false);
 
-        MyWindowListener myWindowListener = new MyWindowListener();
-        // 设置监听事件
-        frame.addWindowListener(myWindowListener);
+        // 设置监听事件,通过适配器添加，比较常用的方式
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                super.windowClosing(e);
+                System.exit(0);
+            }
+        });
     }
 }
