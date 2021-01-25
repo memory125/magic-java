@@ -17,7 +17,8 @@ public class GridLayoutDemo {
         frame.setLocation(200, 200);
 
         // 设置布局
-        frame.setLayout(new GridLayout(2, 3, 30,20));
+//        frame.setLayout(new GridLayout(2, 3, 30,20));
+        frame.setLayout(new GridLayout(2, 3));
 
         // 按钮
         Button button1 = new Button("Button1");
@@ -27,7 +28,6 @@ public class GridLayoutDemo {
         Button button5 = new Button("Button5");
         Button button6 = new Button("Button6");
 
-
         // 添加按钮
         frame.add(button1);
         frame.add(button2);
@@ -36,7 +36,8 @@ public class GridLayoutDemo {
         frame.add(button5);
         frame.add(button6);
 
-
+        // 自动填充大小
+        frame.pack();
         // 设置可见
         frame.setVisible(true);
 
