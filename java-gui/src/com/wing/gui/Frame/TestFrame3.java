@@ -13,7 +13,8 @@ public class TestFrame3 {
         Frame frame = new Frame();
         // 创建Panel对象
         Panel panel = new Panel();
-
+        // 设置布局
+        frame.setLayout(null);
         // 设置坐标
         frame.setBounds(300, 300, 500, 500);
         // 设置背景颜色
@@ -24,10 +25,9 @@ public class TestFrame3 {
 //        Dimension dimension = layoutManager.preferredLayoutSize(new Container());
 //        dimension.setSize(200, 200);
 //        panel.setLayout(layoutManager);
-        panel.setLayout(null);
 
         // 设置坐标
-        panel.setBounds(50, 50,200, 200);
+        panel.setBounds(50, 50,400, 400);
 
         // 设置Panel背景颜色
         panel.setBackground(new Color(139, 42, 34));
