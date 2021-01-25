@@ -20,3 +20,9 @@ Java programming learning repository.
 ## fundamental-4
 - Abstract class definition, extending and demo.
 - Interface definition, implementation and demo.
+- Exception implementation and demo.
+- String classes demo.
+
+## java-gui
+- Frame usage and demo.
+- Panel usage and demo

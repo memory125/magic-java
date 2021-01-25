@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-fundamental-2/java-fundamental-2.iml" filepath="$PROJECT_DIR$/java-fundamental-2/java-fundamental-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-fundamental-3/java-fundamental-3.iml" filepath="$PROJECT_DIR$/java-fundamental-3/java-fundamental-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-fundamental-4/java-fundamental-4.iml" filepath="$PROJECT_DIR$/java-fundamental-4/java-fundamental-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-gui/java-gui.iml" filepath="$PROJECT_DIR$/java-gui/java-gui.iml" />
     </modules>
   </component>
 </project>
