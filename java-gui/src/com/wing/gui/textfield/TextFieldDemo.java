@@ -5,13 +5,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
+/**
+ * @author memory125
+ */
 public class TextFieldDemo {
     public static void main(String[] args) {
         new TextFieldFrame();
     }
 }
 
+// TextFieldFrame实现
 class TextFieldFrame extends Frame {
     public TextFieldFrame() {
         loadFrame();
@@ -42,6 +45,7 @@ class TextFieldFrame extends Frame {
     }
 }
 
+// 实现TextField的监听事件
 class MyTextFieldFrameActionListener implements ActionListener {
 
     public MyTextFieldFrameActionListener() {
