@@ -3,7 +3,9 @@ package com.wing.gui.layout;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
+/**
+ * @author memory125
+ */
 public class GridLayoutDemo {
     public static void main(String[] args) {
         // 创建Frame对象
