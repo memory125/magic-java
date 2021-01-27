@@ -34,6 +34,7 @@ public class KeyFrame extends Frame{
          }
      });
 
+     // 添加鼠标监听事件
      addMouseListener(new MouseAdapter() {
          // 鼠标事件: 按下，弹起，桉住不放
          @Override
