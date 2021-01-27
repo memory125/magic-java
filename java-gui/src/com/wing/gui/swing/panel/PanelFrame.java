@@ -36,7 +36,6 @@ public class PanelFrame extends JFrame{
         container.add(panel3);
         container.add(panel4);
 
-
         setVisible(true);
         setBounds(200,200,400,400);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

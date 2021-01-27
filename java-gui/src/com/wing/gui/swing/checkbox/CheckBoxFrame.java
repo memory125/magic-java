@@ -27,7 +27,7 @@ public class CheckBoxFrame extends JFrame{
 //        container.add(option2, BorderLayout.CENTER);
 //        container.add(option3, BorderLayout.SOUTH);
 
-        // 2. FlowLayout
+        // 添加组件
         container.add(checkBox1);
         container.add(checkBox2);
         container.add(checkBox3);

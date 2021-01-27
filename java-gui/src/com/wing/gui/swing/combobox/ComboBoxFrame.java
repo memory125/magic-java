@@ -26,7 +26,7 @@ public class ComboBoxFrame extends JFrame{
         comboBox.addItem("Option6");
         comboBox.addItem("Option7");
 
-        // 2. FlowLayout
+        // 添加组件
         container.add(comboBox);
 
         // 设置窗口属性

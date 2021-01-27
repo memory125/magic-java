@@ -34,7 +34,7 @@ public class ListFrame extends JFrame{
         // 列表框
         JList<String> list = new JList<>(stringVector);
 
-        // 2. FlowLayout
+        // 添加组件
         container.add(list);
 
         // 设置窗口属性
