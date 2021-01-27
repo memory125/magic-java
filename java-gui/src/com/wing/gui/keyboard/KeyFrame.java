@@ -9,7 +9,6 @@ import java.util.Iterator;
  * @author memory125
  */
 public class KeyFrame extends Frame{
-
     // 坐标记录
     ArrayList points;
 
@@ -36,15 +35,15 @@ public class KeyFrame extends Frame{
      });
 
      addMouseListener(new MouseAdapter() {
-         // 鼠标事件: 按下，弹起，桉树不放
+         // 鼠标事件: 按下，弹起，桉住不放
          @Override
          public void mousePressed(MouseEvent e) {
              KeyFrame frame = (KeyFrame) e.getSource();
              // 在点击的时候，在界面上会产生一个点，
              // 这个点就是鼠标的点
              frame.addPoint(new Point(e.getX(), e.getY()));
-
-             frame.repaint();
+             // 每次点击鼠标都需要重绘一次
+             frame.repaint();        // 刷新
          }
      });
 
