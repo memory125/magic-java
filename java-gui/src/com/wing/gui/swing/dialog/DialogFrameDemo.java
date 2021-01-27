@@ -1,4 +1,4 @@
-package com.wing.gui.swing.jdialog;
+package com.wing.gui.swing.dialog;
 
 /**
  * @author memory125

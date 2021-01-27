@@ -1,4 +1,4 @@
-package com.wing.gui.swing.jframe;
+package com.wing.gui.swing.frame;
 
 /**
  * @author memory125
