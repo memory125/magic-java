@@ -1,7 +1,5 @@
 package com.wing.gui.swing.imageicon;
 
-import java.io.IOException;
-
 /**
  * @author memory125
  */
