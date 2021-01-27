@@ -29,8 +29,11 @@ public class KeyFrame extends Frame{
          @Override
          public void keyPressed(KeyEvent e) {
              //super.keyPressed(e);
+             // 获取键值
              int keyCode = e.getKeyCode();
-             System.out.println(keyCode);
+             char keyChar = e.getKeyChar();
+             System.out.println("keyCode: " + keyCode);
+             System.out.println("keyChar: " + keyChar);
          }
      });
 
