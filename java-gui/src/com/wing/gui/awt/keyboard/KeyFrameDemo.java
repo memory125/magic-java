@@ -1,4 +1,4 @@
-package com.wing.gui.keyboard;
+package com.wing.gui.awt.keyboard;
 
 /**
  * @author memory125

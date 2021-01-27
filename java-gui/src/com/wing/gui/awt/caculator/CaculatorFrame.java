@@ -1,4 +1,4 @@
-package com.wing.gui.caculator;
+package com.wing.gui.awt.caculator;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

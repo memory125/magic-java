@@ -1,4 +1,4 @@
-package com.wing.gui.listener;
+package com.wing.gui.awt.listener;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;

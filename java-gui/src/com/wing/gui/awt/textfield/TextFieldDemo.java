@@ -1,4 +1,4 @@
-package com.wing.gui.textfield;
+package com.wing.gui.awt.textfield;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

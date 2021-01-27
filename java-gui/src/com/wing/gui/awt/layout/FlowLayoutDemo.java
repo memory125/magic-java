@@ -1,4 +1,4 @@
-package com.wing.gui.layout;
+package com.wing.gui.awt.layout;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -6,10 +6,10 @@ import java.awt.event.WindowEvent;
 /**
  * @author memory125
  */
-public class GridLayoutDemo {
+public class FlowLayoutDemo {
     public static void main(String[] args) {
         // 创建Frame对象
-        Frame frame = new Frame("GridLayoutDemo");
+        Frame frame = new Frame("FlowLayoutDemo");
 
         // 设置大小
         frame.setSize(400, 400);
@@ -18,28 +18,21 @@ public class GridLayoutDemo {
         // 设置起始位置
         frame.setLocation(200, 200);
 
-        // 设置布局
-//        frame.setLayout(new GridLayout(2, 3, 30,20));
-        frame.setLayout(new GridLayout(2, 3));
 
         // 按钮
-        Button button1 = new Button("Button1");
-        Button button2 = new Button("Button2");
-        Button button3 = new Button("Button3");
-        Button button4 = new Button("Button4");
-        Button button5 = new Button("Button5");
-        Button button6 = new Button("Button6");
+        Button east = new Button("East");
+        Button west = new Button("West");
+        Button south = new Button("South");
+        Button north = new Button("North");
+        Button center = new Button("Center");
 
         // 添加按钮
-        frame.add(button1);
-        frame.add(button2);
-        frame.add(button3);
-        frame.add(button4);
-        frame.add(button5);
-        frame.add(button6);
+        frame.add(east, BorderLayout.EAST);
+        frame.add(west, BorderLayout.WEST);
+        frame.add(south, BorderLayout.SOUTH);
+        frame.add(north, BorderLayout.NORTH);
+        frame.add(center, BorderLayout.CENTER);
 
-        // 自动填充大小
-        frame.pack();
         // 设置可见
         frame.setVisible(true);
 

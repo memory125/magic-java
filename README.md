@@ -24,5 +24,5 @@ Java programming learning repository.
 - String classes demo.
 
 ## java-gui
-- Frame usage and demo.
-- Panel usage and demo
+- Awt component usage and demo.
+- Swing component usage and demo
