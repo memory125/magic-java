@@ -30,8 +30,9 @@ public class DialogFrame extends JFrame{
                 JDialog jDialog = new JDialog();
                 jDialog.setTitle("Popup Dialog");
                 jDialog.setVisible(true);
-                jDialog.setBounds(200,200, 200,200);
-                jDialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+                jDialog.setBounds(300,300, 200,200);
+                // JDialog已经默认有EXIT_ON_CLOSE属性
+                //jDialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
                 //jDialog.dispose();
             }
         });
