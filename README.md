@@ -14,7 +14,7 @@ Java programming learning repository.
 
 ## fundamental-3
 - Java method demos and usage.
-- Arrays usage.
+- Arrays usage and demo.
 - Class definition and inherit.
 
 ## fundamental-4
@@ -26,3 +26,7 @@ Java programming learning repository.
 ## java-gui
 - Awt component usage and demo.
 - Swing component usage and demo
+- Snake game demo via Swing.
+
+## java-thread
+- Multi-thread demo.

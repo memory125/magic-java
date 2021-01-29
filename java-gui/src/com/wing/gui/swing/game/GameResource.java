@@ -15,6 +15,7 @@ public class GameResource {
     public static ImageIcon up = new ImageIcon(upURL);//上
     public static ImageIcon down = new ImageIcon(downURL);//下
     public static ImageIcon left = new ImageIcon(leftURL);//左
+
     public static ImageIcon right = new ImageIcon(rightURL);//右
     //身体
     public static URL bodyURL = GameResource.class.getResource("statics/body.png");
