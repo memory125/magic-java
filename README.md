@@ -24,8 +24,8 @@ Java programming learning repository.
 - String classes demo.
 
 ## java-gui
-- Awt component usage and demo.
-- Swing component usage and demo
+- Awt components usage and demo.
+- Swing components usage and demo
 - Snake game demo via Swing.
 
 ## java-thread
