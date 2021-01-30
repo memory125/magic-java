@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 /**
  * @author memory125
  */
-// 线程创建方式3：实现callable接口
+// 线程创建方式3：实现callable接口 ----> 了解即可
 public class TestCallable implements Callable<Boolean> {
     // url
     String url;
