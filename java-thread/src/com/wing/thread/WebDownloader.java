@@ -1,10 +1,13 @@
 package com.wing.thread;
 
 import org.apache.commons.io.FileUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+
+/**
+ * @author memory125
+ */
 
 // 异常快捷键： Ctrl + Alt + T
 public class WebDownloader {

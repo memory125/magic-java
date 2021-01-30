@@ -1,5 +1,10 @@
 package com.wing.thread;
 
+/**
+ * @author memory125
+ */
+
+// 使用多线程下载图片
 public class TestThread2 extends Thread {
     // url
     String url;
