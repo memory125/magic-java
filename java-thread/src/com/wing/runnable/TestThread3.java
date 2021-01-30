@@ -1,8 +1,9 @@
 package com.wing.runnable;
 
-import com.wing.thread.TestThread1;
-
-// 创建线程方式2：实现Runnable接口，重写run方法，执行线程需要丢入Runnable接口的实现类，调用start方法
+/**
+ * @author memory125
+ */
+// 创建线程方式2：实现Runnable接口，重写run方法，执行线程需要丢入Runnable接口的实现类，调用start方法  -----> 推荐使用这种方式
 public class TestThread3 implements Runnable {
     public static void main(String[] args) {
         // 1. 创建runnable接口的实现类对象
