@@ -7,6 +7,12 @@ import java.util.concurrent.*;
  * @author memory125
  */
 // 线程创建方式3：实现callable接口 ----> 了解即可
+/*
+    callable的好处:
+    1. 可以定义返回值
+    2. 可以抛出异常
+
+ */
 public class TestCallable implements Callable<Boolean> {
     // url
     String url;
