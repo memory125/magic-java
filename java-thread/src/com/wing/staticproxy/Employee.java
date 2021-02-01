@@ -4,7 +4,7 @@ package com.wing.staticproxy;
  * @author memory125
  */
 // 具体的雇佣者，供职于公司的有具体工作的职员
-public class Employee implements ContractorEmplyee {
+public class Employee implements ContractorEmployee {
     // 雇佣者姓名
     String name;
 
