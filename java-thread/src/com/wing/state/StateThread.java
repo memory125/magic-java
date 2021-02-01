@@ -20,12 +20,12 @@ public class StateThread {
 
         // 获取线程状态
         Thread.State state = thread.getState();
-        System.out.println(Thread.currentThread().getName() + " is " +  state);
+        System.out.println(Thread.currentThread().getName() + " is " +  state);   // New
 
         // 启动线程
         thread.start();
         state = thread.getState();
-        System.out.println(Thread.currentThread().getName() + " is " +  state);
+        System.out.println(Thread.currentThread().getName() + " is " +  state);       // Runnable
 
         while (state != Thread.State.TERMINATED) {
             try {
@@ -34,7 +34,7 @@ public class StateThread {
                 e.printStackTrace();
             }
             state = thread.getState();
-            System.out.println(Thread.currentThread().getName() + " is " +  state);
+            System.out.println(Thread.currentThread().getName() + " is " +  state);        // Waitting
         }
     }
 }
