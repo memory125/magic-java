@@ -20,7 +20,7 @@ public class TicketThreadPlus implements Runnable{
         }
     }
 
-    // synchronized: 同步
+    // synchronized: 同步方法，锁的是this
     public synchronized void buyTicket() {
         if (ticketNumber <= 0) {
             flag = true;
