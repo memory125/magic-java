@@ -5,7 +5,6 @@ package com.wing.state;
  */
 public class StateThread {
     public static void main(String[] args) {
-
         // 使用lamdba表达式创建线程
         Thread thread = new Thread(() -> {
             for (int i = 0; i < 5; i++) {
