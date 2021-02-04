@@ -32,7 +32,6 @@ public class Producer2 extends Thread{
                     e.printStackTrace();
                 }
             }
-
         }
     }
 }
