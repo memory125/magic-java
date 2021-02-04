@@ -1,4 +1,4 @@
-package com.wing.communication.producer;
+package com.wing.communication.consumer;
 
 import com.wing.communication.Container;
 import com.wing.communication.Product;
@@ -6,24 +6,22 @@ import com.wing.communication.Product;
 /**
  * @author memory125
  */
-public class Producer extends Thread{
+public class Consumer1 extends Thread{
     Container container;
 
-    public Producer(Container container, String name) {
+    public Consumer1(Container container, String name) {
         super(name);
         this.container = container;
     }
 
-    // 生产产品
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
             try {
-                container.push(new Product(i));
+                System.out.println(Thread.currentThread().getName() + "消费了第" + container.pop().id + "个产品！");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(Thread.currentThread().getName() + "生产了" + i + "个产品！");
         }
     }
 }
