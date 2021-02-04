@@ -29,4 +29,14 @@ Java programming learning repository.
 - Snake game demo via Swing.
 
 ## java-thread
-- Multi-thread demo.
+- Create thread and launch it.
+- Thread class, interface Runnable and Callable.
+- Thread state.
+- Thread priority.
+- Static proxy.
+- Lambda expression.
+- Thread synchronization.
+- Lock.
+
+## java-network
+- IP address.
