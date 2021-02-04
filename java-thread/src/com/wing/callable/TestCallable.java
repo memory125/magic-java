@@ -11,7 +11,6 @@ import java.util.concurrent.*;
     callable的好处:
     1. 可以定义返回值
     2. 可以抛出异常
-
  */
 public class TestCallable implements Callable<Boolean> {
     // url
