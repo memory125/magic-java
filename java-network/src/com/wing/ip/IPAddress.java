@@ -20,6 +20,7 @@ public class IPAddress {
         System.out.println("HostAddress: " + tenCent.getHostAddress());
         System.out.println("HostName: " + tenCent.getHostName());
         System.out.println("Address: " + tenCent.getAddress());
+        // 获取规范的主机名
         System.out.println("CanonicalHostName: " + tenCent.getCanonicalHostName());
     }
 }
