@@ -1,4 +1,4 @@
-package com.wing.chat.client;
+package com.wing.chat.tcp.client;
 
 import java.io.IOException;
 import java.io.OutputStream;
