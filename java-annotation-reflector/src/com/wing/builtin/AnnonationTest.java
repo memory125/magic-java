@@ -1,4 +1,4 @@
-package com.wing.buildin;
+package com.wing.builtin;
 
 import java.util.ArrayList;
 import java.util.List;

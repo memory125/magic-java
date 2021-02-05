@@ -47,5 +47,5 @@ Java programming learning repository.
 - URL demo.
 
 ## java-annotation-reflector
-- Builtin annotation demo.
+- Built-in annotation demo.
 - Self-defined annotation.
