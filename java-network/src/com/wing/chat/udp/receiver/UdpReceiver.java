@@ -7,7 +7,7 @@ import java.net.DatagramSocket;
 /**
  * @author memory125
  */
-public class UdpServer {
+public class UdpReceiver {
     public static void main(String[] args) throws IOException {
         // 1. 创建socket
         DatagramSocket socket = new DatagramSocket(9999);

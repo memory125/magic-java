@@ -10,7 +10,7 @@ import java.net.InetAddress;
 /**
  * @author memory125
  */
-public class UdpClient {
+public class UdpSender {
     public static void main(String[] args) throws IOException {
         // 1. 创建socket
         DatagramSocket socket = new DatagramSocket(7777);
