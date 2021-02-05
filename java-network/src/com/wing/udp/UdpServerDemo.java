@@ -26,6 +26,7 @@ public class UdpServerDemo {
         System.out.println(datagramPacket.getSocketAddress());
         // 3. 接收到的数据内容
         System.out.println(new String(datagramPacket.getData(), 0, datagramPacket.getLength()));
+        System.out.println(new String(datagramPacket.getData()));
 
         // 4. 关闭资源
         socket.close();
