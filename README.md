@@ -39,4 +39,13 @@ Java programming learning repository.
 - Lock.
 
 ## java-network
-- IP address.
+- IP address information.
+- Simple chat demo via tcp.
+- Simple chat demo via udp.
+- Multi-thread chat demo via udp.
+- File uploading demo.
+- URL demo.
+
+## java-annotation-reflector
+- Builtin annotation demo.
+- Self-defined annotation.
