@@ -1,4 +1,4 @@
-package com.wing.builtin;
+package com.wing.annotation.builtin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,6 @@ public class AnnonationTest {
     // 内置注解3
     // @SuppressWarnings：主要用在取消一些编译器产生的警告对代码左侧行列的遮挡
     // 适用范围：可以用于类、字段、函数、函数入参、构造函数和函数的局部变量
-    @SuppressWarnings("all")
     public void test2() {
         List list = new ArrayList();
     }

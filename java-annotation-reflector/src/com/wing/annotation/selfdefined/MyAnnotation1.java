@@ -1,4 +1,4 @@
-package com.wing.selfdefined;
+package com.wing.annotation.selfdefined;
 
 import java.lang.annotation.*;
 
@@ -24,7 +24,7 @@ import java.lang.annotation.*;
  */
 
 @MyAnnotationTest
-public class MyAnnotation {
+public class MyAnnotation1 {
 
     public static void test(){
         System.out.println("This is MyAnnotation Test!!!!!!!!!!!!");
