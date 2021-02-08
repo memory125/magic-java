@@ -5,6 +5,6 @@ package com.wing.reflection;
  */
 public class Student extends UserInfo {
     public Student() {
-        this.name = "Student";
+        this.setName("Student");
     }
 }
