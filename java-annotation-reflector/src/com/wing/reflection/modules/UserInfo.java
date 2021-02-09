@@ -1,5 +1,8 @@
-package com.wing.reflection;
+package com.wing.reflection.classmodules;
 
+/**
+ * @author memory125
+ */
 public class UserInfo {
     private int id;
     private String name;

@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 public class ReflectionTest4 {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException {
         // 获取类对象
-        Class c1 = Class.forName("com.wing.reflection.UserInfo");
+        Class c1 = Class.forName("com.wing.reflection.classmodules.UserInfo");
 
         // 1. 获取类的类名
         System.out.println("==================1. Class Name=========================");

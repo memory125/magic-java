@@ -1,6 +1,6 @@
 package com.wing.reflection;
 
-import java.lang.annotation.Annotation;
+import com.wing.reflection.modules.UserInfo;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class ReflectionTest5 {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchFieldException {
         // 获取类对象
-        Class c1 = Class.forName("com.wing.reflection.UserInfo");
+        Class c1 = Class.forName("com.wing.reflection.modules.UserInfo");
 
         // 构造对象
         UserInfo user = (UserInfo) c1.newInstance();         // 本质就是调用类的无参构造器

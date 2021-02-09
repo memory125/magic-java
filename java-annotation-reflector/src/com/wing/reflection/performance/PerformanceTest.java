@@ -1,6 +1,6 @@
 package com.wing.performance;
 
-import com.wing.reflection.UserInfo;
+import com.wing.reflection.classmodules.UserInfo;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 

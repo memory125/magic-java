@@ -1,6 +1,6 @@
 package com.wing.reflection.classmodules;
 
-import com.wing.reflection.UserInfo;
+import com.wing.reflection.classmodules.UserInfo;
 
 /**
  * @author memory125
