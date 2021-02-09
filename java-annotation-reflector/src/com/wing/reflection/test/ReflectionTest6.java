@@ -28,11 +28,17 @@ public class ReflectionTest6 {
         }
         
         // 获取注解的value的值
+        /*
+            db_user
+         */
         MyTable myTable = (MyTable)c1.getAnnotation(MyTable.class);
         String value = myTable.value();
         System.out.println(value);
 
         // 获取类属性或方法的注解
+        /*
+            @com.wing.annotation.selfdefined.MyTableField(column=name, type=varchar, length=20)
+         */
         Field name = c1.getDeclaredField("name");
         Annotation[] nameAnnotaitons = name.getAnnotations();
         for (Annotation nameAnnotaiton : nameAnnotaitons) {
@@ -40,6 +46,11 @@ public class ReflectionTest6 {
         }
 
         // 获取指定属性的注解
+        /*
+            gender
+            varchar
+            10
+         */
         Field gender = c1.getDeclaredField("gender");
         MyTableField myTableAnnotation = gender.getAnnotation(MyTableField.class);
         System.out.println(myTableAnnotation.column());
