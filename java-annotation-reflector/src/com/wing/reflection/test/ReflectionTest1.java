@@ -1,4 +1,4 @@
-package com.wing.reflection;
+package com.wing.reflection.test;
 
 /**
  * @author memory125

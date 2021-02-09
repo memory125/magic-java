@@ -1,7 +1,6 @@
 package com.wing.reflection.generic;
 
-import com.wing.reflection.classmodules.UserInfo;
-
+import com.wing.reflection.modules.UserInfo;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

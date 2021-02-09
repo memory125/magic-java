@@ -1,6 +1,6 @@
 package com.wing.performance;
 
-import com.wing.reflection.classmodules.UserInfo;
+import com.wing.reflection.modules.UserInfo;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -25,7 +25,7 @@ public class PerformanceTest {
 
     // 反射调用方式测试
     public static void test02() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
-        Class c1 = Class.forName("com.wing.reflection.UserInfo");
+        Class c1 = Class.forName("com.wing.reflection.modules.UserInfo");
         UserInfo user = (UserInfo) c1.newInstance();
         long startTime = System.currentTimeMillis();
         Method getId = c1.getDeclaredMethod("getId", null);
@@ -40,7 +40,7 @@ public class PerformanceTest {
 
     // 反射调用，关闭安全检测后测试
     public static void test03() throws IllegalAccessException, InstantiationException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
-        Class c1 = Class.forName("com.wing.reflection.UserInfo");
+        Class c1 = Class.forName("com.wing.reflection.modules.UserInfo");
         UserInfo user = (UserInfo) c1.newInstance();
         long startTime = System.currentTimeMillis();
         Method getId = c1.getDeclaredMethod("getId", null);

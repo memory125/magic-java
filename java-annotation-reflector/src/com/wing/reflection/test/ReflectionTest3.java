@@ -1,4 +1,4 @@
-package com.wing.reflection;
+package com.wing.reflection.test;
 
 import java.lang.annotation.*;
 

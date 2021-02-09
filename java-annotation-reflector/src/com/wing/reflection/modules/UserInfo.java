@@ -1,12 +1,20 @@
-package com.wing.reflection.classmodules;
+package com.wing.reflection.modules;
+
+import com.wing.annotation.selfdefined.MyTable;
+import com.wing.annotation.selfdefined.MyTableField;
 
 /**
  * @author memory125
  */
+@MyTable("db_user")
 public class UserInfo {
+    @MyTableField(column = "id", type = "int", length = 8)
     private int id;
+    @MyTableField(column = "name", type = "varchar", length = 20)
     private String name;
+    @MyTableField(column = "age", type = "int", length = 8)
     private int age;
+    @MyTableField(column = "gender", type = "varchar", length = 10)
     private String gender;
 
     public UserInfo() {

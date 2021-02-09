@@ -1,4 +1,4 @@
-package com.wing.reflection;
+package com.wing.reflection.test;
 
 import com.wing.reflection.modules.UserInfo;
 import java.lang.reflect.Constructor;
