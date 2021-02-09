@@ -1,10 +1,12 @@
 package com.wing.performance;
 
 import com.wing.reflection.UserInfo;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/**
+ * @author memory125
+ */
 // 测试性能
 public class PerformanceTest {
 
