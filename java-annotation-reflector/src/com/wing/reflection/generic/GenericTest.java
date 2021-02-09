@@ -1,4 +1,4 @@
-package com.wing.generic;
+package com.wing.reflection.generic;
 
 import com.wing.reflection.UserInfo;
 

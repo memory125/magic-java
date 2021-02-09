@@ -1,5 +1,8 @@
 package com.wing.reflection;
 
+import com.wing.reflection.UserInfo;
+import com.wing.reflection.classmodules.Teacher;
+
 /**
  * @author memory125
  */
