@@ -49,3 +49,10 @@ Java programming learning repository.
 ## java-annotation-reflector
 - Built-in annotation demo.
 - Self-defined annotation.
+- Classloader demo.
+- Specific annotation demo.
+
+## java-web
+- Java web fundamentals.
+- Java web demo.
+
