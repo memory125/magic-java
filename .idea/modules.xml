@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-network/java-network.iml" filepath="$PROJECT_DIR$/java-network/java-network.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-thread/java-thread.iml" filepath="$PROJECT_DIR$/java-thread/java-thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-web/java-web.iml" filepath="$PROJECT_DIR$/java-web/java-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web/src/com/wing/web/javaweb-01/javaweb-01.iml" filepath="$PROJECT_DIR$/java-web/src/com/wing/web/javaweb-01/javaweb-01.iml" />
     </modules>
   </component>
 </project>
