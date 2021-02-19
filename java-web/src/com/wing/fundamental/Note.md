@@ -205,4 +205,51 @@ Location:              # 让网页重新定位
     * 资源不存在
 * 5xx：服务器代码错误 500 502-网关错误
   
-## 5.Https
+## 5.Maven
+### Why
+- 在javaweb开发中，需要使用大量的jar包，要手动导入
+- 如何能够让一个东西自动帮助我们导入和配置这些jar包
+<br>由此，Maven诞生了！
+
+### 5.1 Maven项目架构管理工具
+Maven的核心思想: **约定大于配置**
+- 有约束，不要去违反
+<br>Maven规定好你该如何去编写我们的java代码，必须要按照这个规范来。
+
+### 5.2 下载安装Maven
+- 下载Maven，[Maven官网](http://maven.apache.org/)
+- 解压即可
+
+### 5.3 配置环境变量
+在系统环境变量中：
+- M2_HOME： Maven目中下的bin目录
+- MAVEN_HOME：Maven的目录
+- 在系统的Path中配置%MAVEN_HOME%\bin
+- 测试环境：
+``` 
+mvn -version
+```
+
+### 5.4 阿里云镜像
+- 镜像：mirrors
+    - 作用：加速我们的下载
+- 国内建议使用阿里云镜像
+<br>在$maven\conf\settings.xml中，加入下述内容：
+```
+  <mirrors>
+    <mirror>
+    <id>aliyunmaven</id>
+    <mirrorOf>central</mirrorOf>
+    <name>aliyun maven</name>
+    <url>https://maven.aliyun.com/repository/public </url>
+    </mirror>
+  </mirrors>
+```
+
+### 5.5 本地仓库
+建立一个本地仓库: **localRepository**
+<br>在$maven\conf\settings.xml中，加入下述内容：
+```
+<localRepository>本地具体路径</localRepository>
+```
+
