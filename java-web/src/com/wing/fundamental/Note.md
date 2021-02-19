@@ -77,10 +77,30 @@ Tomcat是Apache 服务器的扩展，但运行时它是独立运行的，所以�
 另外它还是一个Servlet和JSP容器，独立的Servlet容器是Tomcat的默认模式。不过，Tomcat处理静态HTML的能力不如Apache服务器。目前Tomcat最新版本为9.0。
 
 ## 3.Tomcat
-### 下载Tomcat
-- 安装或解压
+### 使用Tomcat
+- 安装或解压：[Tomcat官网](https://tomcat.apache.org/)
 - 了解配置文件及目录结构
 - 了解作用
+- 启动：startup.bat / startuo.sh
+- 关闭：shutdown.bat / shutdown.sh
+- 访问测试：http://localhost:8080
+
+### 可能遇到的问题
+- Java环境变量没有配置
+- 闪退问题：需要配置兼容性
+- 乱码问题：配置文件中设置
+
+### 配置
+- 文件路径: $tomcat/conf/server.xml
+- 可以配置的端口号
+    - tomcat默认的端口号：8080
+    - mysql：3306
+    - http：80
+    - https：443
+- 可以配置的主机名称
+    - 默认的主机名：localhost->127.0.0.1
+    - 默认网站应用存放的位置：webapps
+    
 
 ## 4.Http
 ###1. 什么是http
