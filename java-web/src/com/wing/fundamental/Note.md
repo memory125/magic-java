@@ -129,15 +129,75 @@ Tomcat是Apache 服务器的扩展，但运行时它是独立运行的，所以�
             -js
             -img 
 ```  
-        
+    
 ## 4.Http
-###1. 什么是http
+### 4.1 什么是http
+<br>超文本传输协议（Hypertext Transfer Protocol，HTTP）是一个简单的请求-响应协议，它通常运行在TCP之上。它指定了
+客户端可能发送给服务器什么样的消息以及得到什么样的响应。请求和响应消息的头以ASCII形式给出；而消息内容则具有一个类似MIME
+的格式。这个简单模型是早期Web成功的有功之臣，因为它使开发和部署非常地直截了当。
+#### HTTP(超文本传输协议)
+是一种简单的请求-响应协议，它通常运行在TCP之上。
+- 文件：html,字符串,...
+- 超文本：图片,音乐,视频,定位,地图...
+- 80
+#### HTTPS：安全的
+- 443
 
-###2. 两个时代
-###3. Http请求
-###4. Http响应 
-#### 4.1 响应体
-#### 4.2 响应状态码
+###4.2 两个时代
+- http1.0
+    - HTTP/1.0：客户端可以与web服务器连接，只能获得一个web资源，断开连接
+- http2.0
+    - HTTP/1.1：客户端可以与web服务器连接，只能获得多个web资源
+    
+###4.3 Http请求
+- 客户端---发请求---服务器
+```
+Request URL: https://www.baidu.com/  # 请求地址
+Request Method: GET                  # get方法/post方法
+Status Code: 200 OK                  # 状态码：200
+Remote Address: 14.215.177.38:443
+```
+```
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9         # 语言
+Cache-Control:max-age=0
+Connection: keep-alive
+```
+#### 请求行
+- 请求行中的请求方式：GET
+- 请求方式：**GET,POST**,HEAD，DELETE,PUT,TRACT
+    - GET：请求能够携带的参数比较少，大小有限制，会在浏览器的URL地址栏显示数据内容，不安全，但高效
+    - POST：请求能够携带的参数没有限制，大小没有限制，不会在浏览器的URL地址栏显示数据内容，安全，但不高效
+#### 消息头
+```
+Accept:                # 告诉浏览器，它所支持的数据类型
+Accept-Encoding:       # 支持哪种编码格式：GBK UTF-8 GB2312 ISO8859-1
+Accept-Language:       # 告诉浏览器，它的语言环境
+Cache-Control:         # 缓存控制
+Connection:            # 告诉浏览器，请求完成时是断开还是连接
+HOST:                  # 主机
+```
+###4.4 Http响应 
+- 服务器---响应---客户端
+```
+Cache-Control: private             # 缓存控制
+Connection: keep-alive             # 连接
+Content-Encoding: gzip             # 编码
+Content-Type: text/html;charset=utf-8 # 类型
+```
+#### 响应体
+```
+Accept:                # 告诉浏览器，它所支持的数据类型
+Accept-Encoding:       # 支持哪种编码格式：GBK UTF-8 GB2312 ISO8859-1
+Accept-Language:       # 告诉浏览器，它的语言环境
+Cache-Control:         # 缓存控制
+Connection:            # 告诉浏览器，请求完成时是断开还是连接
+HOST:                  # 主机
+Refresh:               # 告诉客户端多久刷新一次
+Location:              # 让网页重新定位
+```
+#### 响应状态码
 * 200：请求响应成功
 * 3xx：请求重定向
     * 重定向：重新到我给你新位置去
