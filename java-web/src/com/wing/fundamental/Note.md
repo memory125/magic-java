@@ -100,8 +100,36 @@ Tomcat是Apache 服务器的扩展，但运行时它是独立运行的，所以�
 - 可以配置的主机名称
     - 默认的主机名：localhost->127.0.0.1
     - 默认网站应用存放的位置：webapps
-    
+### 面试题
+请你谈谈网站是如何进行访问的？
+- 输入一个域名：回车
+- 检查本机的```C:\Windows\System32\drivers\etc\hosts```配置文件下有没有这个域名因映射
+    - 有：直接返回对应的IP地址，在这个地址中，有我们要访问的web程序，可以之际访问
+    ``` 
+    127.0.0.1  www.xxx.com 
+    ```
+    - 没有，去DNS服务器找，找到的话返回，找不到就返回找不到。
+- 可以配置下环境变量
 
+### 发布网站
+- 将自己写的网站，放到服务器(Tomcat)中指定的web应用的文件夹(webapps)下，就可以让问了
+- 网站应该有的结构
+```
+--webapps
+    -ROOT
+    -yourWeb
+        - WEB-INF
+            -classes
+            -libs
+            -web.xml
+        - index.html
+        - static
+            -css
+                - style.css
+            -js
+            -img 
+```  
+        
 ## 4.Http
 ###1. 什么是http
 
