@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-web/src/com/wing/servlet/hello-servlet/hello-servlet.iml" filepath="$PROJECT_DIR$/java-web/src/com/wing/servlet/hello-servlet/hello-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-annotation-reflector/java-annotation-reflector.iml" filepath="$PROJECT_DIR$/java-annotation-reflector/java-annotation-reflector.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-fundamental-1/java-fundamental-1.iml" filepath="$PROJECT_DIR$/java-fundamental-1/java-fundamental-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-fundamental-2/java-fundamental-2.iml" filepath="$PROJECT_DIR$/java-fundamental-2/java-fundamental-2.iml" />
