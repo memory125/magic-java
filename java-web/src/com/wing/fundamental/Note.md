@@ -20,7 +20,9 @@ web应用程序：可以提供浏览器访问的程序：
     * java程序
     * jar包
     * 配置文件（properties）
-web应用程序编写完毕后，若想提供给外界访问：需要提供一个服务器统一管理。 
+
+<br>web应用程序编写完毕后，若想提供给外界访问：需要提供一个服务器统一管理。 
+
 ### 1.3 静态web
 * *.html,.html都是网页的后缀，如果服务器上一直存在这些东西，我们就可以直接进行读取。
 * 静态web的缺点
@@ -254,5 +256,35 @@ mvn -version
 <br>在$maven\conf\settings.xml中，加入下述内容：
 ```
 <localRepository>本地具体路径</localRepository>
+```
+## 6.Web开发
+### 6.1 创建web项目
+在上述配置好环境之后，使用IDEA创建Web项目。步骤如下：
+- File->New->Project
+- Maven->勾选”Create from archetype"->maven-archetype-webapp
+- 项目名称，GroupId，Artifact信息
+- 完成创建。
+
+### 6.2 web.xml配置信息
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+
+  <!-----注册servlet--->
+  <servlet>
+    <servlet-name>helloServlet</servlet-name>
+    <servlet-class>HelloServlet</servlet-class>
+  </servlet>
+    <!-----servlet映射--->
+  <servlet-mapping>
+    <servlet-name>helloServlet</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+</web-app>
 ```
 
