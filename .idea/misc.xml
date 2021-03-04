@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/java-web/src/com/wing/web/javaweb-01/pom.xml" />
         <option value="$PROJECT_DIR$/java-web/src/com/wing/servlet/hello-servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/java-mybatis/mybatis-start/pom.xml" />
       </list>
     </option>
   </component>
