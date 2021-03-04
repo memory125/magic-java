@@ -24,6 +24,15 @@
     <servlet-name>CookieServlet</servlet-name>
     <url-pattern>/co</url-pattern>
   </servlet-mapping>
+  <!--注册SessionServlet-->
+  <servlet>
+    <servlet-name>SessionServlet</servlet-name>
+    <servlet-class>com.wing.session.SessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionServlet</servlet-name>
+    <url-pattern>/se</url-pattern>
+  </servlet-mapping>
   <!--注册过滤器-->
   <filter>
     <filter-name>CharacterFilter</filter-name>
@@ -33,5 +42,10 @@
     <filter-name>CharacterFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <!--设置Session失效的时间-->
+  <session-config>
+    <!--以分钟为单位-->
+    <session-timeout>60</session-timeout>
+  </session-config>
 
 </web-app>
