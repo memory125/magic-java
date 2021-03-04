@@ -6,6 +6,7 @@
          version="4.0"
          metadata-complete="true">
 
+  <!--注册servlet-->
   <servlet>
     <servlet-name>helloServlet</servlet-name>
     <servlet-class>HelloServlet</servlet-class>
@@ -14,4 +15,14 @@
     <servlet-name>helloServlet</servlet-name>
     <url-pattern>/test</url-pattern>
   </servlet-mapping>
+  <!--注册过滤器-->
+  <filter>
+    <filter-name>CharacterFilter</filter-name>
+    <filter-class>com.wing.filter.CharacterFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterFilter</filter-name>
+    <url-pattern>/test/*</url-pattern>
+  </filter-mapping>
+
 </web-app>

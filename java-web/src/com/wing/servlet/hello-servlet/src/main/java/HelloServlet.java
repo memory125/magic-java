@@ -11,8 +11,8 @@ import java.io.PrintWriter;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
-        resp.setCharacterEncoding("utf-8");
+//        resp.setContentType("text/html");
+//        resp.setCharacterEncoding("utf-8");
         PrintWriter writer = resp.getWriter();
 
         writer.println("<html>");
