@@ -17,16 +17,18 @@ public class CharacterFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         servletRequest.setCharacterEncoding("utf-8");
-        servletResponse.setContentType("text/html");
+        servletResponse.setContentType("text/html;charset=UTF-8");
         servletResponse.setCharacterEncoding("utf-8");
 
         // 备注：这一句至关重要，务必谨记
+        // 让请求继续执行，如果不写，程序到这将被拦截停止
         filterChain.doFilter(servletRequest, servletResponse);
     }
 
     // 销毁
     @Override
     public void destroy() {
+//        System.gc();           // 通知回收垃圾
         System.out.println(this.getClass() + " -----------destroy-------");
     }
 }

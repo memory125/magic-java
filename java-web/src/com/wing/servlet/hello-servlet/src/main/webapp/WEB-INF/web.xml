@@ -6,14 +6,23 @@
          version="4.0"
          metadata-complete="true">
 
-  <!--注册servlet-->
+  <!--注册HelloServlet-->
   <servlet>
-    <servlet-name>helloServlet</servlet-name>
+    <servlet-name>HelloServlet</servlet-name>
     <servlet-class>HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>helloServlet</servlet-name>
+    <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <!--注册Cookieservlet-->
+  <servlet>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>com.wing.cookie.CookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/co</url-pattern>
   </servlet-mapping>
   <!--注册过滤器-->
   <filter>
@@ -22,7 +31,7 @@
   </filter>
   <filter-mapping>
     <filter-name>CharacterFilter</filter-name>
-    <url-pattern>/test/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
 
 </web-app>
