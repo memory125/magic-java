@@ -11,5 +11,7 @@
 
     <artifactId>mybatis-01</artifactId>
 
+    <dependencies>
+    </dependencies>
 
 </project>
