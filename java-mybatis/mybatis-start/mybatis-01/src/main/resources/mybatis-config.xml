@@ -26,5 +26,7 @@
     <!--每一个mapper.xml都需要在Mybatis核心配置文件中注册-->
     <mappers>
         <mapper resource="com/wing/mapper/UserMapper.xml"/>
+        <!--如果mapper文件放在resources目录下，那么注册的方式如下-->
+<!--        <mapper resource="UserMapper.xml"/>-->
     </mappers>
 </configuration>
