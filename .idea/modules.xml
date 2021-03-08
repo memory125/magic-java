@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-web/java-web.iml" filepath="$PROJECT_DIR$/java-web/java-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-web/src/com/wing/web/javaweb-01/javaweb-01.iml" filepath="$PROJECT_DIR$/java-web/src/com/wing/web/javaweb-01/javaweb-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-01/mybatis-01.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-01/mybatis-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-02/mybatis-02.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-02/mybatis-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-start.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-start.iml" />
     </modules>
   </component>
