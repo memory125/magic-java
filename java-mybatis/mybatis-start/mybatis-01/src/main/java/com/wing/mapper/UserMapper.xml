@@ -19,6 +19,7 @@
         select * from wing.user where name like #{name}
    </select>
 
+    <!--添加用户-->
     <insert id="addUser" parameterType="com.wing.pojo.User">
         insert into wing.user(id, name, pwd) values(#{id}, #{name}, #{pwd})
    </insert>
@@ -28,10 +29,12 @@
         insert into wing.user(id, name, pwd) values(#{userId}, #{userName}, #{passWord})
    </insert>
 
+    <!--更新用户信息-->
     <update id="updateUser" parameterType="com.wing.pojo.User">
         update wing.user set name = #{name}, pwd = #{pwd} where id = #{id}
    </update>
 
+    <!--删除用户-->
     <delete id="deleteUser" parameterType="int">
         delete from wing.user where id = #{id}
     </delete>
