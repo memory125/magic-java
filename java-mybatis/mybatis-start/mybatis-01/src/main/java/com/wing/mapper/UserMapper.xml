@@ -15,9 +15,9 @@
    </select>
 
     <!--根据name模糊查询用户信息-->
-    <select id="getUserByLike" resultType="com.wing.pojo.User" >
+    <!--select * from wing.user where name like "%"#{name}"%"-->
+    <select id="getUserByLike" resultType="user" >
         select * from wing.user where name like #{name}
---         select * from wing.user where name like "%"#{name}"%"
    </select>
 
     <!--添加用户-->
