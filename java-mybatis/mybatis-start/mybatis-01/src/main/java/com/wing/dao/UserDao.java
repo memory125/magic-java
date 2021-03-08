@@ -3,6 +3,7 @@ package com.wing.dao;
 import com.wing.pojo.User;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author memory125
@@ -16,6 +17,9 @@ public interface UserDao {
 
     // 添加用户
     int addUser(User user);
+
+    // 添加用户
+    int addUser2(Map<String, Object> map);
 
     // 修改用户
     int updateUser(User user);

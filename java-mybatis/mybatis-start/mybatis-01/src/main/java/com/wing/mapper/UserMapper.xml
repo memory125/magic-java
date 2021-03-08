@@ -17,6 +17,11 @@
         insert into wing.user(id, name, pwd) values(#{id}, #{name}, #{pwd})
    </insert>
 
+    <!--使用map作为参数时，比较灵活，数据库的列值对应map中的键和值-->
+    <insert id="addUser2" parameterType="map">
+        insert into wing.user(id, name, pwd) values(#{userId}, #{userName}, #{passWord})
+   </insert>
+
     <update id="updateUser" parameterType="com.wing.pojo.User">
         update wing.user set name = #{name}, pwd = #{pwd} where id = #{id}
    </update>
