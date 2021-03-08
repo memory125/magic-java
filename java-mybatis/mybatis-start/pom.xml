@@ -39,7 +39,6 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.4.2</version>
         </dependency>
-
         <!-- junit依赖 -->
         <dependency>
             <groupId>junit</groupId>
