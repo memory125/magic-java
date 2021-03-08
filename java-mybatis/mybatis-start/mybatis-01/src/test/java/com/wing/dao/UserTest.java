@@ -40,6 +40,22 @@ public class UserTest {
         // 关闭资源
         sqlSession.close();
     }
+    
+    // 模糊查询
+    @Test
+    public void getUserByLike() {
+        // 获取sqlSession对象
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        // 执行
+        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        List<User> userList = userDao.getUserByLike("%J%");
+        for (User user : userList) {
+            System.out.println(user);
+        }
+
+        // 关闭资源
+        sqlSession.close();
+    }
 
     // 增删改需要提交事务
     @Test

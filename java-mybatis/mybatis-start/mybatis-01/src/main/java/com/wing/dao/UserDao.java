@@ -15,6 +15,9 @@ public interface UserDao {
     // 根据用户ID查询
     User getUserById(int id);
 
+    // 按照名字模糊查询
+    List<User> getUserByLike(String name);
+
     // 添加用户
     int addUser(User user);
 

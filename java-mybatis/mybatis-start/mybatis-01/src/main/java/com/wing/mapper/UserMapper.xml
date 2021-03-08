@@ -9,8 +9,14 @@
         select * from wing.user
    </select>
 
+    <!--根据Id查询用户信息-->
     <select id="getUserById" parameterType="int" resultType="com.wing.pojo.User" >
         select * from wing.user where id = #{id}
+   </select>
+
+    <!--根据name模糊查询用户信息-->
+    <select id="getUserByLike" resultType="com.wing.pojo.User" >
+        select * from wing.user where name like #{name}
    </select>
 
     <insert id="addUser" parameterType="com.wing.pojo.User">
