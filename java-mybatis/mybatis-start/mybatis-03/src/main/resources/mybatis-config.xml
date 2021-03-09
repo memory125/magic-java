@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部配置文件-->
+    <properties resource="do.properties" />
+    <!--给实体类配置别名-->
+    <typeAliases>
+        <package name="com.wing.pojo"/>
+    </typeAliases>
+    <environments default="development">
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="${driver}"/>-->
+<!--                <property name="url" value="${url}"/>-->
+<!--                <property name="username" value="${username}"/>-->
+<!--                <property name="password" value="${password}"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--每一个mapper.xml都需要在Mybatis核心配置文件中注册-->
+    <mappers>
+        <mapper resource="com/wing/mapper/UserMapper.xml"/>
+        <!--如果mapper文件放在resources目录下，那么注册的方式如下-->
+<!--        <mapper resource="UserMapper.xml"/>-->
+    </mappers>
+</configuration>
