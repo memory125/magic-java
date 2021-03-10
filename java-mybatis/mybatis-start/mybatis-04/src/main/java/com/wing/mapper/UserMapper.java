@@ -18,6 +18,9 @@ public interface UserMapper {
     // 按照名字模糊查询
     List<User> getUserByLike(String name);
 
+    // 分页查询
+    List<User> getUserByLimit(Map<String, Object> map);
+
     // 添加用户
     int addUser(User user);
 

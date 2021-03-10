@@ -4,6 +4,7 @@ import com.wing.mapper.UserMapper;
 import com.wing.pojo.User;
 import com.wing.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -14,6 +15,9 @@ import java.util.Map;
  * @author memory125
  */
 public class UserTest {
+
+    static Logger logger = Logger.getLogger(UserTest.class);
+
     @Test
     public void getUsers() {
         // 获取sqlSession对象
@@ -50,6 +54,28 @@ public class UserTest {
         // 执行
         UserMapper userDao = sqlSession.getMapper(UserMapper.class);
         List<User> userList = userDao.getUserByLike("%J%");
+        for (User user : userList) {
+            System.out.println(user);
+        }
+
+        // 关闭资源
+        sqlSession.close();
+    }
+
+    // 分页查询
+    @Test
+    public void getUserByLimit() {
+        // 获取sqlSession对象
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        // 执行
+        UserMapper userDao = sqlSession.getMapper(UserMapper.class);
+
+        Map<String, Object> map = new HashMap<String, Object>();
+
+        map.put("startIndex", 0);
+        map.put("pageSize", 5);
+
+        List<User> userList = userDao.getUserByLimit(map);
         for (User user : userList) {
             System.out.println(user);
         }
@@ -140,5 +166,12 @@ public class UserTest {
 
         // 关闭资源
         sqlSession.close();
+    }
+
+    @Test
+    public void log4jTest() {
+       logger.info(this.getClass() + ": [info] ===========> log4jTest");
+       logger.debug(this.getClass() + ": [debug] ===========> log4jTest");
+       logger.error(this.getClass() + ": [error] ===========> log4jTest");
     }
 }

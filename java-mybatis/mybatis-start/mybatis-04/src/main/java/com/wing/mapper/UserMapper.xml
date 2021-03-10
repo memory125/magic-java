@@ -28,6 +28,11 @@
         select * from wing.user where name like #{name}
    </select>
 
+    <!--分页查询-->
+   <select id="getUserByLimit" parameterType="map" resultMap="userResultMap" >
+        select * from wing.user limit #{startIndex},#{pageSize}
+   </select>
+
     <!--添加用户-->
     <insert id="addUser" parameterType="user">
         insert into wing.user(id, name, pwd) values(#{id}, #{name}, #{pwd})
