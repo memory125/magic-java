@@ -1,21 +1,30 @@
-drop table if exists wing.user;
-create table if not exists user
+drop table if exists wing.teacher;
+create table if not exists teacher
 (
     id   int auto_increment,
     name varchar(30) default null,
-    pwd  varchar(30) default null,
     primary key (id)
 )engine=InnoDB default charset=utf8;
 
-insert into wing.user(id,name,pwd) values(1,'Jack','123321');
+insert into teacher(id, name) values (1, 'Jack');
 
+drop table if exists wing.student;
+create table if not exists student
+(
+    id   int auto_increment,
+    name varchar(30) default null,
+    tid int default null,
+    primary key (id),
+    key fktid (tid),
+    constraint fktid foreign key (tid) references teacher (id)
+)engine=InnoDB default charset=utf8;
 
-insert into wing.user(id,name,pwd) values(1,'Jack','123321'),
-                         (2,'David','123456'),
-                         (3,'Owen','111111'),
-                         (4,'Mark','123123'),
-                         (5,'Tony','112233'),
-                         (6,'Kevin','332211'),
-                         (7,'Jim','334455');
-
-select * from user;
+insert into student(id, name, tid) values (1, 'Tom', 1);
+insert into student(id, name, tid) values (2, 'Lina', 1);
+insert into student(id, name, tid) values (3, 'Terry', 1);
+insert into student(id, name, tid) values (4, 'Jimmy', 1);
+insert into student(id, name, tid) values (5, 'Jane', 1);
+insert into student(id, name, tid) values (6, 'Peter', 1);
+insert into student(id, name, tid) values (7, 'David', 1);
+insert into student(id, name, tid) values (8, 'Chris', 1);
+insert into student(id, name, tid) values (9, 'Eva', 1);

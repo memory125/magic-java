@@ -26,7 +26,9 @@
     </environments>
    <!--绑定接口-->
     <mappers>
-        <mapper class="com.wing.mapper.TeacherMapper" />
-        <mapper class="com.wing.mapper.StudentMapper" />
+<!--        <mapper class="com.wing.mapper.TeacherMapper" />-->
+<!--        <mapper class="com.wing.mapper.StudentMapper" />-->
+        <mapper resource="com/wing/mapper/StudentMapper.xml" />
+        <mapper resource="com/wing/mapper/TeacherMapper.xml" />
     </mappers>
 </configuration>
