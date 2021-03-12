@@ -38,6 +38,19 @@ public class MapperTest {
     }
 
     @Test
+    public void getTeacherById2() {
+        // 获取sqlSession对象
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        // 执行
+        TeacherMapper mapper = sqlSession.getMapper(TeacherMapper.class);
+        Teacher teacher = mapper.getTeacher2(1);
+        System.out.println(teacher);
+
+        // 关闭资源
+        sqlSession.close();
+    }
+
+    @Test
     public void getStudentList() {
         // 获取sqlSession对象
         SqlSession sqlSession = MyBatisUtils.getSqlSession();

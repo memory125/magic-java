@@ -5,6 +5,7 @@
 <!--namespace=绑定一个对应的Dao/Mapper接口-->
 <mapper namespace="com.wing.mapper.TeacherMapper">
 
+    <!--第一种方式-->
     <!--结果映射-->
     <resultMap id="TeacherStudent" type="Teacher">
         <result property="id" column="tid" />
@@ -31,4 +32,20 @@
     <select id="getTeacherList" resultType="Teacher">
         select * from wing.teacher
    </select>
+
+
+    <!--第二种方式-->
+    <resultMap id="TeacherStudent2" type="Teacher">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="students" javaType="ArrayList" ofType="Student" column="id" select="getStudents"/>
+    </resultMap>
+
+    <select id="getTeacher2" resultMap="TeacherStudent2">
+        select * from wing.teacher where id = #{tid}
+    </select>
+
+    <select id="getStudents" resultType="Student">
+        select * from wing.student where tid = #{tid}
+    </select>
 </mapper>

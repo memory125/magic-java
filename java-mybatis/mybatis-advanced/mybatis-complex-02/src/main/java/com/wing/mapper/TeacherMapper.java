@@ -12,4 +12,7 @@ public interface TeacherMapper {
 
     // 获取指定的老师信息
     public Teacher getTeacher(int tid);
+
+    // 获取指定的老师信息2
+    public Teacher getTeacher2(int tid);
 }
