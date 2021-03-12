@@ -51,5 +51,4 @@ public class MapperTest {
         // 关闭资源
         sqlSession.close();
     }
-
 }
