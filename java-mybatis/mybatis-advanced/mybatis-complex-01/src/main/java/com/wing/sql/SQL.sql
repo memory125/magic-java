@@ -28,3 +28,7 @@ insert into student(id, name, tid) values (6, 'Peter', 1);
 insert into student(id, name, tid) values (7, 'David', 1);
 insert into student(id, name, tid) values (8, 'Chris', 1);
 insert into student(id, name, tid) values (9, 'Eva', 1);
+
+select * from student s, teacher t where s.tid = t.id;
+
+select s.id, s.name, t.name from student s, teacher t where s.tid = t.id;

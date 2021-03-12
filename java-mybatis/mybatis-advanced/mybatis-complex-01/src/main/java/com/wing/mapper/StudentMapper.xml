@@ -4,10 +4,31 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace=绑定一个对应的Dao/Mapper接口-->
 <mapper namespace="com.wing.mapper.StudentMapper">
-    <!--查询语句-->
-    <select id="getUserList" resultType="Student">
+    <!--
+    查询学生信息：
+    思路：
+     1. 查询所有的学生
+     2. 根据查询出来的学生的tid，寻找对应的老师
+    -->
+
+    <resultMap id="StudentTeacher" type="Student">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <!--复杂的属性需要单独处理
+         对象：association
+         集合：collection
+         -->
+        <association property="teacher" column="tid" javaType="Teacher" select="getTeacher" />
+<!--        <collection property="" />-->
+    </resultMap>
+
+    <select id="getStudentList" resultMap="StudentTeacher">
         select * from wing.student
    </select>
+
+    <select id="getTeacher" resultType="Teacher">
+        select * from wing.teacher where id = #{id}
+    </select>
 
     
 </mapper>
