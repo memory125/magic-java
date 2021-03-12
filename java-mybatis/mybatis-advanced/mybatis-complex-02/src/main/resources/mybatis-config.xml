@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部配置文件-->
+    <properties resource="do.properties" />
+    <!--日志输出配置-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--给实体类配置别名-->
+    <typeAliases>
+        <package name="com.wing.pojo"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+   <!--绑定接口-->
+    <mappers>
+<!--        <mapper class="com.wing.mapper.TeacherMapper" />-->
+<!--        <mapper class="com.wing.mapper.StudentMapper" />-->
+        <mapper resource="com/wing/mapper/StudentMapper.xml" />
+        <mapper resource="com/wing/mapper/TeacherMapper.xml" />
+    </mappers>
+</configuration>
