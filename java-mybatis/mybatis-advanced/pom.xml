@@ -6,7 +6,11 @@
 
     <groupId>com.wing</groupId>
     <artifactId>mybatis-advanced</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>mybatis-complex-01</module>
+    </modules>
 
     <dependencies>
         <!-- mybatis依赖 -->
