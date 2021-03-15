@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-advanced.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-complex-01/mybatis-complex-01.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-complex-01/mybatis-complex-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-complex-02/mybatis-complex-02.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-complex-02/mybatis-complex-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-complex-03/mybatis-complex-03.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-advanced/mybatis-complex-03/mybatis-complex-03.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-start.iml" filepath="$PROJECT_DIR$/java-mybatis/mybatis-start/mybatis-start.iml" />
     </modules>
   </component>

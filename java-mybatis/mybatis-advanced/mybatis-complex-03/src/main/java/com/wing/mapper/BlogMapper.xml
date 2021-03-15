@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.wing.mapper.BlogMapper">
+    <insert id="addBlog" parameterType="blog">
+        insert into wing.blog(id,title,author,create_time,views)
+        values (#{id},#{title},#{author},#{createTime},#{views})
+    </insert>
+
+    <select id="getBlogList" resultType="blog">
+        select * from wing.blog
+    </select>
+
+
+</mapper>
