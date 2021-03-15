@@ -18,4 +18,7 @@ public interface BlogMapper {
     // 按照条件查询
     public List<Blog> queryBlogByChoose(Map map);
 
+    // 更新数据
+    public int updateBlog(Map map);
+
 }

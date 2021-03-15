@@ -55,4 +55,18 @@
         </where>
     </select>
 
+    <!--更新记录-->
+    <update id="updateBlog" parameterType="map">
+        update wing.blog
+        <set>
+            <if test="title != null">
+                title = #{title},
+            </if>
+            <if test="author != null">
+                author = #{author}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
 </mapper>

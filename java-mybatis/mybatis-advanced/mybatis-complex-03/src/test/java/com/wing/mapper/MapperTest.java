@@ -100,4 +100,24 @@ public class MapperTest {
         sqlSession.close();
     }
 
+    @Test
+    public void updateBlog() {
+        // 获取sqlSession对象
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        // 执行
+        BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
+        Map map = new HashMap();
+        map.put("title", "Spring课程");
+        //map.put("author", "David");
+        //map.put("views", 2000);
+        map.put("id", "bc590ad03a694db788e50bd370784a46");
+        mapper.updateBlog(map);
+
+        // 提交事务
+        sqlSession.commit();
+
+        // 关闭资源
+        sqlSession.close();
+    }
+
 }
