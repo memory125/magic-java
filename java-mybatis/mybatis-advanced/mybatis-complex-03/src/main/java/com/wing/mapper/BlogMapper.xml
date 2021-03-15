@@ -4,14 +4,26 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace=绑定一个对应的Dao/Mapper接口-->
 <mapper namespace="com.wing.mapper.BlogMapper">
+    <!--添加记录-->
     <insert id="addBlog" parameterType="blog">
         insert into wing.blog(id,title,author,create_time,views)
         values (#{id},#{title},#{author},#{createTime},#{views})
     </insert>
 
+    <!--查询所有记录-->
     <select id="getBlogList" resultType="blog">
         select * from wing.blog
     </select>
 
+    <!--根据条件查询-->
+    <select id="queryBlogByIf" parameterType="map" resultType="blog">
+        select * from wing.blog where 1=1
+        <if test="author != null">
+            and author = #{author}
+        </if>
+        <if test="title != null">
+            and title = #{title}
+        </if>
+    </select>
 
 </mapper>

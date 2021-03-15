@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 public class MapperTest {
@@ -47,12 +48,30 @@ public class MapperTest {
     }
 
     @Test
-    public void getTeacherList() {
+    public void getBlogs() {
         // 获取sqlSession对象
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         // 执行
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
         List<Blog> blogList = mapper.getBlogList();
+        for (Blog blog : blogList) {
+            System.out.println(blog);
+        }
+
+        // 关闭资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void getBlogListByIf() {
+        // 获取sqlSession对象
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        // 执行
+        BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        //map.put("author", "David");
+        map.put("title", "Spring课程");
+        List<Blog> blogList = mapper.queryBlogByIf(map);
         for (Blog blog : blogList) {
             System.out.println(blog);
         }
