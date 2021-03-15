@@ -14,4 +14,8 @@ public interface BlogMapper {
 
     // 按照条件查询
     public List<Blog> queryBlogByIf(Map<String, Object> map);
+
+    // 按照条件查询
+    public List<Blog> queryBlogByChoose(Map map);
+
 }

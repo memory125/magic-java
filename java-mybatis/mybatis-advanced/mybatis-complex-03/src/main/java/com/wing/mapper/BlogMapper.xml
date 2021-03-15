@@ -15,15 +15,44 @@
         select * from wing.blog
     </select>
 
-    <!--根据条件查询-->
+    <!--根据条件查询1-->
+<!--    <select id="queryBlogByIf" parameterType="map" resultType="blog">-->
+<!--        select * from wing.blog where 1=1-->
+<!--        <if test="author != null">-->
+<!--            and author = #{author}-->
+<!--        </if>-->
+<!--        <if test="title != null">-->
+<!--            and title = #{title}-->
+<!--        </if>-->
+<!--    </select>-->
     <select id="queryBlogByIf" parameterType="map" resultType="blog">
-        select * from wing.blog where 1=1
-        <if test="author != null">
-            and author = #{author}
-        </if>
-        <if test="title != null">
-            and title = #{title}
-        </if>
+        select * from wing.blog
+        <where>
+            <if test="author != null">
+                and author = #{author}
+            </if>
+            <if test="title != null">
+                and title = #{title}
+            </if>
+        </where>
+    </select>
+
+    <!--根据条件查询2-->
+    <select id="queryBlogByChoose" parameterType="map" resultType="blog">
+        select * from wing.blog
+        <where>
+            <choose>
+                <when test="author != null">
+                    author = #{author}
+                </when>
+                <when test="title != null">
+                    and title = #{title}
+                </when>
+                <otherwise>
+                    and views = #{views}
+                </otherwise>
+            </choose>
+        </where>
     </select>
 
 </mapper>

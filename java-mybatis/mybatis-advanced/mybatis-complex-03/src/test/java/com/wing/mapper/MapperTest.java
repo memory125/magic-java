@@ -9,6 +9,7 @@ import org.junit.Test;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MapperTest {
 
@@ -68,10 +69,29 @@ public class MapperTest {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         // 执行
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
-        HashMap<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<String, Object>();
         //map.put("author", "David");
         map.put("title", "Spring课程");
         List<Blog> blogList = mapper.queryBlogByIf(map);
+        for (Blog blog : blogList) {
+            System.out.println(blog);
+        }
+
+        // 关闭资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void getBlogsByChoose() {
+        // 获取sqlSession对象
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        // 执行
+        BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
+        Map map = new HashMap();
+        //map.put("author", "David");
+        //map.put("title", "Spring课程");
+        map.put("views", 2000);
+        List<Blog> blogList = mapper.queryBlogByChoose(map);
         for (Blog blog : blogList) {
             System.out.println(blog);
         }
