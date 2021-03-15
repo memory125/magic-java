@@ -30,7 +30,6 @@ public class MapperTest {
         blog.setAuthor("Jack");
         mapper.addBlog(blog);
 
-
         blog.setId(IDUtils.generateID());
         blog.setTitle("SpringMVC课程");
         blog.setAuthor("Tina");
@@ -119,5 +118,4 @@ public class MapperTest {
         // 关闭资源
         sqlSession.close();
     }
-
 }
