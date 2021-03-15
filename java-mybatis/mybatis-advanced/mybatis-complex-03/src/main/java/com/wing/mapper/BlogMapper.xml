@@ -4,6 +4,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace=绑定一个对应的Dao/Mapper接口-->
 <mapper namespace="com.wing.mapper.BlogMapper">
+    <!--sql语句提取-->
+    <sql id="judge-author-title">
+        <if test="author != null">
+            and author = #{author}
+        </if>
+        <if test="title != null">
+            and title = #{title}
+        </if>
+    </sql>
+
     <!--添加记录-->
     <insert id="addBlog" parameterType="blog">
         insert into wing.blog(id,title,author,create_time,views)
@@ -28,12 +38,13 @@
     <select id="queryBlogByIf" parameterType="map" resultType="blog">
         select * from wing.blog
         <where>
-            <if test="author != null">
-                and author = #{author}
-            </if>
-            <if test="title != null">
-                and title = #{title}
-            </if>
+<!--            <if test="author != null">-->
+<!--                and author = #{author}-->
+<!--            </if>-->
+<!--            <if test="title != null">-->
+<!--                and title = #{title}-->
+<!--            </if>-->
+            <include refid="judge-author-title"></include>
         </where>
     </select>
 
