@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 public class MapperTest {
-
     @Test
     public void addBlog() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
