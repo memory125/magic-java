@@ -1,15 +1,13 @@
 package com.wing.mapper;
 
 import com.wing.pojo.Blog;
+import com.wing.pojo.User;
 import com.wing.utils.IDUtils;
 import com.wing.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MapperTest {
     @Test
@@ -113,6 +111,30 @@ public class MapperTest {
 
         // 提交事务
         sqlSession.commit();
+
+        // 关闭资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void getUserByForeach() {
+        // 获取sqlSession对象
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        // 执行
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        Map map = new HashMap();
+
+        ArrayList<Integer> ids = new ArrayList<Integer>();
+        ids.add(1);
+        ids.add(2);
+        ids.add(3);
+
+        map.put("ids", ids);
+
+        List<User> users = mapper.queryUserByForeach(map);
+        for (User user : users) {
+            System.out.println(user);
+        }
 
         // 关闭资源
         sqlSession.close();

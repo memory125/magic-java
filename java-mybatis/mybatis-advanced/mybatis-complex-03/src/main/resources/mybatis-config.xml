@@ -29,5 +29,6 @@
    <!--绑定接口-->
     <mappers>
         <mapper resource="com/wing/mapper/BlogMapper.xml" />
+        <mapper resource="com/wing/mapper/UserMapper.xml" />
     </mappers>
 </configuration>

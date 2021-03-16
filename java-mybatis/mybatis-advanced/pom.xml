@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project [
+        <!ELEMENT project (modelVersion|groupId|artifactId|packaging|version|modules|dependencies|build)*>
+        <!ATTLIST project
+                xmlns:xsi CDATA #REQUIRED
+                xmlns CDATA #REQUIRED
+                xsi:schemaLocation CDATA #REQUIRED>
+        <!ELEMENT modelVersion (#PCDATA)>
+        <!ELEMENT groupId (#PCDATA)>
+        <!ELEMENT artifactId (#PCDATA)>
+        <!ELEMENT packaging (#PCDATA)>
+        <!ELEMENT version (#PCDATA)>
+        <!ELEMENT modules (module)*>
+        <!ELEMENT module (#PCDATA)>
+        <!ELEMENT dependencies (dependency)*>
+        <!ELEMENT dependency (groupId|artifactId|version)*>
+        <!ELEMENT build (resources)*>
+        <!ELEMENT resources (resource)*>
+        <!ELEMENT resource (directory|includes|filtering)*>
+        <!ELEMENT directory (#PCDATA)>
+        <!ELEMENT includes (include)*>
+        <!ELEMENT include (#PCDATA)>
+        <!ELEMENT filtering (#PCDATA)>
+        ]>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
