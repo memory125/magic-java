@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.wing.mapper.UserMapper">
+    <!--使用缓存-->
+    <cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true"/>
+
+    <!--查询语句-->
+    <select id="getUserList" resultType="com.wing.pojo.User">
+        select * from wing.user
+   </select>
+
+    <!--根据Id查询用户信息-->
+    <select id="getUserById" parameterType="int" resultType="com.wing.pojo.User" >
+        select * from wing.user where id = #{id}
+   </select>
+
+    <!--根据name模糊查询用户信息-->
+    <!--select * from wing.user where name like "%"#{name}"%"-->
+    <select id="getUserByLike" resultType="user" >
+        select * from wing.user where name like #{name}
+   </select>
+
+    <!--根据传入参数动态查询用户-->
+    <!--传递一个万能的map，map中可以存在一个集合-->
+    <select id="queryUserByForeach" parameterType="map" resultType="user" >
+        select * from wing.user
+        <where>
+            <foreach collection="ids" item="id" open=" and (" close=")" separator="or">
+                id = #{id}
+            </foreach>
+        </where>
+   </select>
+
+    <!--传递一个万能的map，map中可以存在一个集合-->
+    <select id="queryUserById" resultType="user" >
+        select * from wing.user where id = #{id}
+    </select>
+
+    <!--添加用户-->
+    <insert id="addUser" parameterType="com.wing.pojo.User">
+        insert into wing.user(id, name, pwd) values(#{id}, #{name}, #{pwd})
+   </insert>
+
+    <!--使用map作为参数时，比较灵活，数据库的列值对应map中的键和值-->
+    <insert id="addUser2" parameterType="map">
+        insert into wing.user(id, name, pwd) values(#{userId}, #{userName}, #{passWord})
+   </insert>
+
+    <!--更新用户信息-->
+    <update id="updateUser" parameterType="com.wing.pojo.User">
+        update wing.user set name = #{name}, pwd = #{pwd} where id = #{id}
+   </update>
+
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete from wing.user where id = #{id}
+    </delete>
+
+</mapper>

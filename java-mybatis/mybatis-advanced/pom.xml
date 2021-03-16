@@ -35,6 +35,7 @@
         <module>mybatis-complex-01</module>
         <module>mybatis-complex-02</module>
         <module>mybatis-complex-03</module>
+        <module>mybatis-complex-04</module>
     </modules>
 
     <dependencies>
